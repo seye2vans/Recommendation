@@ -23,7 +23,7 @@ EXPOSE 8081
 COPY --from=build /app/target/*.jar app.jar
 
 # Configure environment variables for PostgreSQL connection
-ENV SPRING_DATASOURCE_URL="\$DATABASE_URL"
+ENV SPRING_DATASOURCE_URL=${DATABASE_URL}
 ENV SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
 ENV SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update

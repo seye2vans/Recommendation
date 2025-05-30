@@ -17,7 +17,7 @@ FROM openjdk:17-jdk
 WORKDIR /app
 
 # Expose the application's port (Render will override with PORT env variable)
-EXPOSE 8081
+EXPOSE 8080
 
 # Copy the built JAR from the previous stage
 COPY --from=build /app/target/*.jar app.jar

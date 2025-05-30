@@ -29,7 +29,7 @@ ENV SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDial
 ENV SPRING_JPA_HIBERNATE_DDL_AUTO=update
 
 # Use PORT env var provided by platform like Render
-ENV SERVER_PORT="\$PORT"
+
 
 # Start the Spring Boot application
 ENTRYPOINT ["java", "-jar", "app.jar"]

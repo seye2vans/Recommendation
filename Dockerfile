@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM maven:3.9.6-openjdk-17 AS build
+FROM maven:3.9-eclipse-temurin-17 AS build
 
 # Set working directory inside the container
 WORKDIR /app
